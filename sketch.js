@@ -1,9 +1,12 @@
 var input;
 var button;
 
+var lexicon;
+
 
 function setup() {
 	noCanvas();
+	lexicon = new RiLexicon();
 	input = createInput('In the time of chimpanzees I was a monkey Butane in my veins');
 	button = createButton ('Genera canzone');
 	input.changed(processRita);
@@ -23,7 +26,12 @@ function processRita() {
 	
 	var output = " ";
 	for (var i = 0; i < words.length; i++) {
+		if (pos[i] === 'nns') {
+			output += lexicon.randomWord('nns');
+		} else {
 		output += words[i];
+		
+		}
 		output += " ";
 
 
