@@ -19,9 +19,11 @@ function processRita() {
 	var words = rs.words();
 	console.log(words);
 
-	var output = '';
+	var output = " ";
 	for (var i = 0; i < words.length; i++) {
 		output += words[i];
+		output += " ";
+
 
 	}
 	createP(output);
