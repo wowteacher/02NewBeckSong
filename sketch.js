@@ -17,8 +17,10 @@ function processRita() {
 	var s = input.value();
 	var rs = new RiString(s);
 	var words = rs.words();
+	var pos = rs.pos();
 	console.log(words);
-
+	console.log(pos);
+	
 	var output = " ";
 	for (var i = 0; i < words.length; i++) {
 		output += words[i];
