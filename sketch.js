@@ -13,7 +13,10 @@ function setup() {
 }
 
 function processRita() {
-	console.log('event');
+	//console.log('event');
 	var s = input.value();
+	var rs = new RiString(s);
+	var words = rs.words();
+	console.log(words);
 	createP(s);
 }
