@@ -22,6 +22,7 @@ function processRita() {
 	var output = '';
 	for (var i = 0; i < words.length; i++) {
 		output += words[i];
+
 	}
-	createP(s);
+	createP(output);
 }
