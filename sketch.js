@@ -18,5 +18,10 @@ function processRita() {
 	var rs = new RiString(s);
 	var words = rs.words();
 	console.log(words);
+
+	var output = '';
+	for (var i = 0; i < words.length; i++) {
+		output += words[i];
+	}
 	createP(s);
 }
